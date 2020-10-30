@@ -1,0 +1,53 @@
+/* Main Banner */
+h1 {
+  font-size: 50px;
+  line-height: 68px;
+  font-weight: 900;
+}
+.Pamex-main-banner {
+  padding: 150px 0 120px 0;
+  position: relative;
+}
+.Pamex-main-banner .main-wrapper {
+  position: relative;
+}
+.Pamex-main-banner .main-wrapper .text-wrapper {
+  width: 45%;
+}
+.Pamex-main-banner .main-wrapper .text-wrapper .sub-text {
+  padding: 15px 0 32px 0;
+  font-weight: normal;
+  color: grey;
+}
+.Pamex-main-banner .main-wrapper .text-wrapper .button-group li {
+  display: inline-block;
+  line-height: 55px;
+  vertical-align: middle;
+}
+
+.Pamex-main-banner .img-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Calculate */
+.investment-calculation {
+    background-image: url(./Images/bg-shape.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 182px 0 110px 0;
+    margin-top: 20%;
+}
+
+.investment-calculation > h1 {
+    text-align: center;
+}
+
+/* Table */
+.table-cryptos {
+  margin: 100px;
+}
+
+  

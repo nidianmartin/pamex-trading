@@ -1,0 +1,42 @@
+.select-currencie {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  -webkit-appearance: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+.label-currencie {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  display: block;
+}
+
+.btn-calculate {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  background: linear-gradient(120deg, #37d0e0 0%, #2676e4 100%);
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-calculate:hover {
+  background-color: #66a2fe;
+  cursor: pointer;
+}
+
+.quote {
+  margin-left: 570px;
+  width: 400px;
+  border: #498eee solid;
+  border-radius: 5px;
+}
