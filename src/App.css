@@ -5,18 +5,48 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1 {
+  font-size: 30px;
+  line-height: 68px;
+  font-weight: 900;
+}
+
+a {
+  color: white;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.custom-container-one {max-width: 820px;margin: 0 auto; padding: 0 15px;}
+.custom-container-two {max-width: 950px;margin: 0 auto; padding: 0 15px;}
+
 .btn-default {
   background: linear-gradient(120deg, #37d0e0 0%, #2676e4 100%);
   line-height: 55px;
-  border-radius: 27px;
+  border-radius: 25px;
   color: #fff;
   text-transform: capitalize;
-  padding: 20px;
+  padding: 8px;
   font-size: 16px;
+  width: 200px;
 }
 
 .message-error {
-  background:linear-gradient(120deg, #ebc856 0%, #ff0c0c 100%);
+  background: linear-gradient(120deg, #ebc856 0%, #ff0c0c 100%);
   border-radius: 30px;
   padding: 0.5rem;
   color: #fff;

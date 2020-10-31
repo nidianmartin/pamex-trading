@@ -9,7 +9,7 @@ function TableCurrencies() {
 
   useEffect(() => {
     listAllCrypto().then((resp) => {
-      setCoins(resp.Data)
+      setCoins(resp)
     })
   }, []);
 
@@ -84,12 +84,12 @@ function TableCurrencies() {
   return (
     <div className="table-coins">
       <div className="coin-search">
-        <h1> CRYPTOCURRENCIY MARKET </h1>
+        <h1 style={{marginBottom:30}}> CRYPTOCURRENCIY MARKET </h1>
         <Search
           placeholder="Search..."
           allowClear
           onChange={handleChange}
-          style={{ width: "50%", margin: "0 20px 20px 250px" }}
+          style={{ width: "50%", margin: "0 20px 30px 250px" }}
         />
       </div>
       <Table columns={columns} dataSource={data} />

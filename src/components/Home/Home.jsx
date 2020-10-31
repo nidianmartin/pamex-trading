@@ -6,6 +6,7 @@ import Calculate from "./ Calculate/Calculate";
 import TableCurrencies from "./TableCurrencies/TableCurrencies";
 import Axios from "axios";
 import Quote from "./ Calculate/Quote";
+import Footer from "./Footer";
 
 export default function Home() {
   const [coin, saveCoin] = useState("");
@@ -70,6 +71,7 @@ export default function Home() {
       <div className="table-cryptos">
         <TableCurrencies />
       </div>
+      <Footer/>
     </div>
   );
 }

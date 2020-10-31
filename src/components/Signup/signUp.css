@@ -1,0 +1,268 @@
+.user-access-page ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #afb4c0;
+  opacity: 1; /* Firefox */
+}
+.user-access-page {
+  position: relative;
+  padding: 150px 0 40px 0;
+}
+.user-access-page .main-container {
+  width: 500px;
+  margin: 0 auto;
+}
+.user-access-page .main-container .inner-box {
+  background: #fff;
+  border: 1px solid #dee0e7;
+  padding: 50px 65px 30px;
+  border-radius: 5px;
+}
+.user-access-page .main-container .logo {
+  text-align: center;
+  margin-bottom: 43px;
+}
+.user-access-page .main-container .login-form input {
+  width: 100%;
+  height: 57px;
+  border: 1px solid #edeef1;
+  padding: 0 15px;
+  margin-bottom: 25px;
+  font-size: 1.333333em;
+  border-radius: 5px;
+}
+.user-access-page .main-container .theme-button {
+  width: 100%;
+  line-height: 58px;
+  border-radius: 30px;
+}
+.user-access-page .main-container .theme-button span {
+  border-radius: 30px;
+}
+.user-access-page .main-container .forget-pass-link {
+  font-size: 1.33333em;
+  color: #101530;
+  margin-top: 27px;
+  transition: all 0.3s ease-in-out;
+}
+.user-access-page .main-container .forget-pass-link:hover {
+  color: #66a6ff;
+}
+.user-access-page .main-container .create-new-account {
+  display: block;
+  background: #fff;
+  border: 1px solid #dee0e7;
+  border-radius: 5px;
+  color: #66a6ff;
+  font-size: 1.333333em;
+  line-height: 56px;
+  margin-top: 22px;
+  text-align: center;
+}
+.user-access-page .main-container .apps-download-button {
+  margin: 0 -11px;
+  padding: 40px 50px 0;
+}
+.user-access-page .main-container .apps-download-button li {
+  float: left;
+  width: 50%;
+  padding: 0 11px;
+  margin-top: 10px;
+}
+.user-access-page .main-footer {
+  max-width: 1010px;
+  padding: 175px 15px 0;
+  margin: 0 auto;
+}
+.user-access-page .main-footer .policy-link {
+  float: left;
+  margin: 0 -12px;
+}
+.user-access-page .main-footer .policy-link li {
+  float: left;
+  padding: 0 12px;
+}
+.user-access-page .main-footer .policy-link li a {
+  font-size: 1.166666em;
+  color: #101530;
+  transition: all 0.3s ease-in-out;
+  margin-top: 14px;
+}
+.user-access-page .main-footer .policy-link li a:hover {
+  color: #66a6ff;
+}
+.user-access-page .main-footer .right-widget {
+  float: right;
+  margin: 0 -12px;
+}
+.user-access-page .main-footer .right-widget > li {
+  float: left;
+  padding: 0 12px;
+}
+.user-access-page .main-footer .right-widget > li:first-child {
+  font-size: 1.166666em;
+  margin-top: 14px;
+}
+.user-access-page
+  .main-footer
+  .right-widget
+  .chosen-container-single
+  .chosen-single {
+  background: #fff !important;
+  border: 1px solid #dee0e7;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.3333333em;
+  text-align: left;
+  padding-left: 20px;
+  color: #101530 !important;
+  box-shadow: none;
+}
+.user-access-page
+  .main-footer
+  .right-widget
+  .chosen-container-single
+  .chosen-single
+  div
+  b {
+  /* background: url(/pamex-trading/public/images/down2.png); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.user-access-page
+  .main-footer
+  .right-widget
+  .chosen-container-active.chosen-with-drop
+  .chosen-single
+  div
+  b {
+  /* background: url(/pamex-trading/public/images/up2.png); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.user-access-page
+  .main-footer
+  .right-widget
+  .chosen-container-single
+  .chosen-single
+  div {
+  right: 20px;
+}
+.user-access-page .main-footer .right-widget .chosen-container {
+  width: 160px !important;
+  display: block;
+}
+.user-access-page
+  .main-footer
+  .right-widget
+  .chosen-container-active.chosen-with-drop
+  .chosen-single {
+  border-color: #66a6ff;
+}
+.user-access-page
+  .main-footer
+  .right-widget
+  .chosen-container-single
+  .chosen-drop {
+  border: 1px solid #66a6ff;
+  top: auto;
+  bottom: 100%;
+  border-radius: 5px;
+}
+.user-access-page
+  .main-footer
+  .right-widget
+  .chosen-container
+  .chosen-results
+  li {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #101530;
+  padding: 0 15px;
+  background: transparent;
+}
+.user-access-page
+  .main-footer
+  .right-widget
+  .chosen-container-single
+  .chosen-search {
+  display: none;
+}
+.user-access-page .main-container .main-title {
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 55px;
+}
+.user-access-page .main-container .sign-up-form input {
+  width: 100%;
+  height: 57px;
+  border: 1px solid #edeef1;
+  padding: 0 15px;
+  margin-bottom: 25px;
+  font-size: 1.333333em;
+  border-radius: 5px;
+}
+.user-access-page .main-container .sign-up-form input[type="tel"] {
+  padding-left: 85px;
+}
+.user-access-page .main-container .sign-up-form .selectric-wrapper {
+  width: 100%;
+  margin: 23px 0;
+}
+.user-access-page .main-container .sign-up-form .selectric .label {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  margin: 0 15px;
+  font-size: 1.33333em;
+  color: #afb4c0;
+}
+.user-access-page .main-container .sign-up-form .selectric .button {
+  height: 55px;
+}
+.user-access-page .main-container .sign-up-form .selectric-items li {
+  font-size: 1.5em;
+  line-height: 40px;
+  padding: 0 23px;
+}
+.user-access-page .main-container .sign-up-form .password-text {
+  margin: -20px 0 45px;
+}
+.user-access-page .main-container .condition-text {
+  font-size: 1.166666em;
+  color: #101530;
+  line-height: 18px;
+  margin: 20px 0 15px 0;
+}
+.user-access-page .main-container .condition-text a {
+  color: #66a6ff;
+  display: inline;
+}
+.user-access-page .main-container .additional-link-text {
+  color: #66a6ff;
+  font-size: 1.3333em;
+  margin-top: 48px;
+}
+.user-access-page .main-container .icon {
+  margin: -11px auto 40px;
+}
+.user-access-page .main-container .confirmation-text {
+  text-align: center;
+  color: #101530;
+  font-size: 1.333333em;
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+.user-access-page .main-container .confirmation-text .mark-text {
+  color: #66a6ff;
+}
+.user-access-page .main-container .verification-code-form input {
+  width: 100%;
+  height: 57px;
+  border: 1px solid #edeef1;
+  padding: 0 15px;
+  margin-bottom: 25px;
+  font-size: 1.333333em;
+  border-radius: 5px;
+}

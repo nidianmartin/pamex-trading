@@ -44,7 +44,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-btn">
-            <Link to="/sing-up" className="btn-link">
+            <Link to="/login" className="btn-link">
               <Button className="btn-navbar" type="primary" shape="round">
                 Login
               </Button>
