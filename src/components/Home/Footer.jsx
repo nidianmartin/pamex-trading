@@ -12,17 +12,17 @@ export default function Footer() {
           <div className="col-lg-3 col-12">
             <ul className="footer-center">
               <li>
-                <Link href="https://github.com/nidianmartin">
+                <Link to="https://github.com/nidianmartin">
                   <VscGithubAlt /> GitHub
                 </Link>
               </li>
               <li>
-                <Link href="https://www.linkedin.com/in/nidian-martin/">
+                <Link to="https://www.linkedin.com/in/nidian-martin/">
                   <RiLinkedinBoxLine /> Linkedin
                 </Link>
               </li>
               <li>
-                <Link href="https://www.instagram.com/nidimartin/">
+                <Link to="https://www.instagram.com/nidimartin/">
                   <SiInstagram /> Instagram
                 </Link>
               </li>
@@ -40,13 +40,13 @@ export default function Footer() {
             <div className="col-lg-4 col-12">
               <ul className="clearfix">
                 <li>
-                  <Link href="/">Affiliates</Link>
+                  <Link to="/">Affiliates</Link>
                 </li>
                 <li>
-                  <Link href="/">Privacy Policy</Link>
+                  <Link to="/">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link href="/">Terms of Use</Link>
+                  <Link to="/">Terms of Use</Link>
                 </li>
               </ul>
             </div>

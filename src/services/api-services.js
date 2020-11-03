@@ -3,17 +3,24 @@ import axios from "axios";
 axios.defaults.baseURL = "http://localhost:3001";
 axios.defaults.withCredentials = true;
 
-export const login = (email, password) => {
+export const login = ({email, password}) => {
   return axios.post("/login", { email, password }).then((res) => res.data);
 };
 
 export const logout = () => {
-  return axios.get("/logout").then((res) => res.data);
+  return axios.post("/logout").then((res) => res.data);
 };
 
-export const signin = () => {
-  return axios.get("/signin").then((res) => res.data);
+export const signup = () => {
+  return axios.post("/users").then((res) => {
+    console.log(res.data)
+   //return res.data
+  });
 };
+
+export const getUser = (id) => {
+  return axios.get(`/users/${id}`).then((res) => res.data)
+}
 
 // API's public
 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { SiTreehouse } from "react-icons/si";
-import { Button } from "antd";
+import { useAuthContext } from "../../../contexts/AuthContext"
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
@@ -11,6 +11,13 @@ export default function Navbar() {
   const handleClick = () => {
     setClick(!click);
   };
+
+  const authContext = useAuthContext();
+
+  if (authContext.user) {
+     return null;
+  }
+
 
   return (
     <div className="navbar">
@@ -39,15 +46,13 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-link">
-            <Link to="/sing-up" className="btn-link">
-                Sign Up
+            <Link to="/signup" className="btn-link">
+              Sign Up
             </Link>
           </li>
           <li className="nav-btn">
-            <Link to="/login" className="btn-link">
-              <Button className="btn-navbar" type="primary" shape="round">
-                Login
-              </Button>
+            <Link to="/login" className="btn-default">
+              Login
             </Link>
           </li>
         </ul>

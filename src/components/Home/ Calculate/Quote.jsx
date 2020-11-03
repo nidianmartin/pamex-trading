@@ -4,7 +4,6 @@ import TextLoop from "react-text-loop";
 
 export default function Quote({ result }) {
   if (Object.keys(result).length === 0) return null;
-  console.log(result);
   return (
     <div className="quote">
       <Alert

@@ -1,0 +1,24 @@
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+.button-header {
+  text-align: center;
+  color: #fff;
+  border: 1px solid #dee0e7;
+  border-radius: 5px;
+  line-height: 37px;
+  padding: 0 17px;
+  margin-top: 13px;
+  background: linear-gradient(120deg, #68e4f1 0%, #66a6ff 100%);
+}

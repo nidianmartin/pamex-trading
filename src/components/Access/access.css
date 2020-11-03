@@ -266,3 +266,14 @@
   font-size: 1.333333em;
   border-radius: 5px;
 }
+
+.btn-form {
+  background: linear-gradient(120deg, #37d0e0 0%, #2676e4 100%);
+  line-height: 8px;
+  border-radius: 25px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+}
