@@ -4,7 +4,7 @@ import { useAuthContext } from '../contexts/AuthContext'
 
 const RedirectToLogin = () => <Redirect to="/login"/>
 
-const RedirectToHome = () => <Redirect to="/profile"/>
+const RedirectToHome = () => <Redirect to="/profile/information"/>
 
 const AuthenticatedRoute = (props) => {
   const { user } = useAuthContext()

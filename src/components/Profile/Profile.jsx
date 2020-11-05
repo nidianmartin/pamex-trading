@@ -1,9 +1,10 @@
 import React from "react";
 import { Layout, Menu, Space } from "antd";
 import {
-  WalletOutlined,
+  StarOutlined,
   UserOutlined,
   PieChartOutlined,
+  FileTextOutlined
 } from "@ant-design/icons";
 import "./profile.css";
 import { Link, Route, Switch } from "react-router-dom";
@@ -12,13 +13,12 @@ import { useAuthContext } from "../../contexts/AuthContext";
 import { logout } from "../../services/api-services";
 import Information from "./Information/Information";
 import Dashboard from "./Dashboard/Dashboard";
-import Wallet from "./Wallet/Wallet";
-
+import Influencers from "./Influencers/Influencers";
+import News from "./News/News";
 
 const { Header, Content, Footer, Sider } = Layout;
 
 export default function Profile() {
-
   const authContext = useAuthContext();
 
   const handleLogout = async () => {
@@ -42,6 +42,9 @@ export default function Profile() {
         onCollapse={(collapsed, type) => {
           console.log(collapsed, type);
         }}
+        style={{
+          overflow: 'auto',
+        }}
       >
         <div style={{ margin: 10 }}>
           <Link to="/" className="navbar-logo">
@@ -52,7 +55,6 @@ export default function Profile() {
         <Menu
           theme="dark"
           mode="inline"
-          defaultSelectedKeys={[""]}
           style={{ marginTop: 30 }}
         >
           <Menu.Item key="1" icon={<UserOutlined />}>
@@ -61,8 +63,11 @@ export default function Profile() {
           <Menu.Item key="2" icon={<PieChartOutlined />}>
             <Link to="/profile/dashboard">Dashboard</Link>
           </Menu.Item>
-          <Menu.Item key="3" icon={<WalletOutlined />}>
-            <Link to="/profile/wallet">Wallet</Link>
+          <Menu.Item key="3" icon={<StarOutlined />}>
+            <Link to="/profile/influencers">Influencers</Link>
+          </Menu.Item>
+          <Menu.Item key="4" icon={<FileTextOutlined />}>
+            <Link to="/profile/news">Noticias</Link>
           </Menu.Item>
         </Menu>
       </Sider>
@@ -103,7 +108,16 @@ export default function Profile() {
                 path="/profile/dashboard"
                 component={Dashboard}
               ></Route>
-              <Route exact path="/profile/wallet" component={Wallet}></Route>
+              <Route
+                exact
+                path="/profile/influencers"
+                component={Influencers}
+              ></Route>
+              <Route
+                exact
+                path="/profile/news"
+                component={News}
+              ></Route>
             </Switch>
           </div>
         </Content>

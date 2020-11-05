@@ -99,11 +99,11 @@ const Login = () => {
                 placeholder="Enter email"
               />
 
-              <div className="invalid-feedback">email is wrong</div>
+              <div className="invalid-feedback">email es invalido</div>
             </div>
 
             <div className="form-group">
-              <label htmlFor="tagline">Password</label>
+              <label htmlFor="tagline">Contraseña</label>
 
               <input
                 name="password"
@@ -117,7 +117,7 @@ const Login = () => {
                 placeholder="Enter password"
               />
                        <p style={{ fontSize: 10 }} className="password-text">
-              Your password should have at least 8 characters
+              Su contraseña debe contener minimo 8 caracteres
             </p>
               <div className="invalid-feedback">error</div>
             </div>
@@ -127,14 +127,15 @@ const Login = () => {
               className="btn-form"
               disabled={isError}
             >
-              Submit
+              Iniciar Sesión
             </button>
           </form>
           <div style={{ fontSize: 10 }} className="condition-text font-fix">
-            By clicking <Link to="/signup">Create account</Link> you agree to
-            our
-            <Link to="/">Terms of service</Link> and{" "}
-            <Link to="/">Privacy policy</Link>.
+            
+            Al hacer clic en <Link to="/signup"> Crear cuenta </Link> acepta
+            nuestra
+            <Link to="/">Terminos del servicio</Link> and{" "}
+            <Link to="/">Politica privacidad</Link>.
           </div>
         </div>
       </div>

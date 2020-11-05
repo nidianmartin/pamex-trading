@@ -1,0 +1,135 @@
+.user-settings-content {
+  background: #fff;
+  border: 1px solid #dee0e7;
+  border-radius: 5px;
+  min-height: 845px;
+  padding: 22px 0 50px 0;
+  background-image: url(../../../images/drawkit-grape-pack-illustration-8.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.settings-tab-content .left-space-fix {
+  padding-left: 30px;
+}
+.settings-tab-content .single-input-group.large-box {
+  width: 540px;
+}
+.settings-tab-content .single-input-group.small-box {
+  width: 540px;
+}
+.settings-tab-content .single-input-group {
+  padding-bottom: 20px;
+}
+.settings-tab-content .single-input-group .member-status {
+  border: 1px solid #dee0e7;
+  padding: 19px 25px;
+  border-radius: 5px;
+}
+.settings-tab-content .single-input-group .member-status .member-info {
+  float: left;
+}
+.settings-tab-content
+  .single-input-group
+  .member-status
+  .member-info
+  .user-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.settings-tab-content .single-input-group .member-status .member-info .name {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+.settings-tab-content
+  .single-input-group
+  .member-status
+  .member-info
+  .name
+  .name-title {
+  font-size: 2em;
+}
+.settings-tab-content
+  .single-input-group
+  .member-status
+  .member-info
+  .profile-photo {
+  position: relative;
+  overflow: hidden;
+}
+.settings-tab-content
+  .single-input-group
+  .member-status
+  .member-info
+  .profile-photo
+  #avatar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.settings-tab-content
+  .single-input-group
+  .member-status
+  .member-info
+  .profile-photo
+  button {
+  color: #66a6ff;
+  font-size: 1.3rem;
+  background: transparent;
+  border: none;
+}
+
+.settings-tab-content .single-input-group .title {
+  color: #8890a3;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 8px;
+  font-size: 1.1666666666em;
+  display: block;
+}
+.settings-tab-content .single-input-group input {
+  width: 100%;
+  height: 57px;
+  border: 1px solid #edeef1;
+  color: #101530;
+  font-size: 1.5em;
+  padding: 0 23px;
+  border-radius: 5px;
+}
+.settings-tab-content .single-input-group .edit-bio {
+  width: 100%;
+  color: #101530;
+  font-size: 1.166666em;
+  height: 100px;
+  max-height: 100px;
+  padding: 24px 23px 10px 23px;
+  border: 1px solid #edeef1;
+  border-radius: 5px;
+  resize: none;
+}
+.settings-tab-content .single-input-group ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #101530;
+  opacity: 1; /* Firefox */
+}
+.settings-tab-content .single-input-group :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #101530;
+}
+.settings-tab-content .single-input-group ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #101530;
+}
+.settings-tab-content .single-input-group .bio-condition-text {
+  font-size: 0.83em;
+  color: #8890a3;
+  text-align: right;
+}
+

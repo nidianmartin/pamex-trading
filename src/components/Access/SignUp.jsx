@@ -22,7 +22,7 @@ export default function SignUp() {
     <div className="main-page-wrapper user-access-page">
       <div className="main-container">
         <div className="inner-box">
-          <h3 className="main-title">Create your account</h3>
+          <h3 className="main-title">Crear Cuenta</h3>
           <Form
             form={form}
             onFinish={onFinish}
@@ -38,7 +38,7 @@ export default function SignUp() {
                 },
               ]}
             >
-              <Input placeholder="Name" />
+              <Input placeholder="Nombre" />
             </Form.Item>
             <Form.Item
               name="lastname"
@@ -49,7 +49,7 @@ export default function SignUp() {
                 },
               ]}
             >
-              <Input placeholder="Last name" />
+              <Input placeholder="Apellido" />
             </Form.Item>
             <Form.Item
               name="email"
@@ -66,6 +66,12 @@ export default function SignUp() {
             >
               <Input placeholder="Email" />
             </Form.Item>
+            <Form.Item name="bio">
+              <Input placeholder="Biografía" />
+            </Form.Item>
+            <Form.Item name="phone">
+              <Input placeholder="Teléfono" />
+            </Form.Item>
             <Form.Item
               name="password"
               rules={[
@@ -75,23 +81,25 @@ export default function SignUp() {
                 },
               ]}
             >
-              <Input placeholder="Password" type="password" />
+              <Input placeholder="Contraseña" type="password" />
             </Form.Item>
             <p style={{ fontSize: 10 }} className="password-text">
-              Your password should have at least 8 characters
+              Su contraseña debe tener minimo 8 caracteres
             </p>
             <Button
               shape="round"
               className="btn-form"
               htmlType="submit"
             >
-              Create account
+              Crear Cuenta
             </Button>
           </Form>
+          <div>
+            {error ? <p style={{color: 'red', fontSize:8}}>{error}</p> : null}
+          </div>
           <div style={{ fontSize: 10 }} className="condition-text font-fix">
-            By clicking 'Create account' you agree to our
-            <Link to="/">Terms of service</Link> and{" "}
-            <Link to="/">Privacy policy</Link>.
+            <Link to="/">Terminos del servicio</Link> and{" "}
+            <Link to="/">Politica de privacidad</Link>.
           </div>
         </div>
       </div>
