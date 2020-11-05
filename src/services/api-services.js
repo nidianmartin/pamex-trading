@@ -11,15 +11,18 @@ export const logout = () => {
   return axios.post("/logout").then((res) => res.data);
 };
 
-export const signup = () => {
-  return axios.post("/users").then((res) => {
-    console.log(res.data)
-   //return res.data
+export const signup = (user) => {
+  return axios.post("/users", user).then((res) => {
+   return res.data
   });
 };
 
 export const getUser = (id) => {
   return axios.get(`/users/${id}`).then((res) => res.data)
+}
+
+export const updateUser = (id, user) => {
+  return axios.patch(`/users/${id}`, user).then((res) => res.data)
 }
 
 // API's public
@@ -40,5 +43,10 @@ export const quoteCrypto = () => {
 
 export const getCoinDay = () => {
   return axios.get('/coin-day')
+  .then((response) => response.data)
+}
+
+export const getExhanges= () => {
+  return axios.get('/exchanges')
   .then((response) => response.data)
 }

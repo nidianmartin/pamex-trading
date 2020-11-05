@@ -6,7 +6,6 @@ import Calculate from "./ Calculate/Calculate";
 import TableCurrencies from "./TableCurrencies/TableCurrencies";
 import Axios from "axios";
 import Quote from "./ Calculate/Quote";
-import Footer from "./Footer";
 
 export default function Home() {
   const [coin, saveCoin] = useState("");
@@ -37,25 +36,25 @@ export default function Home() {
           <div className="main-wrapper clearfix">
             <div className="text-wrapper float-left">
               <h1 className="main-title fadeInDown wow">
-                Your best crypto Startup agency
+                La mejor Criptoinformación
               </h1>
               <p
                 className="sub-text fadeInUp wow"
                 data-wow-duration="1.2s"
                 data-wow-delay="0.5s"
               >
-                The fast & most populer currency for your future online
-                business.
+                Todo lo que necesitas saber de criptomonedas y mercados. Centraliza
+                toda tu información en una sola web. <br/>
+                ¿Ya tienes cuenta?
               </p>
-
               <ul
                 className="button-group fadeInUp wow"
                 data-wow-duration="1.2s"
                 data-wow-delay="1s"
               >
                 <li className="start-button">
-                  <Link to="/" className="btn-default">
-                    Get Started
+                  <Link to="/signup" className="btn-default">
+                    Crear Cuenta
                   </Link>
                 </li>
               </ul>
@@ -64,14 +63,13 @@ export default function Home() {
         </div>
       </div>
       <div className="investment-calculation">
-        <h1>CRYPTO CALCULATOR</h1>
+        <h1>CALCULADORA DE CRIPTOMONEDAS</h1>
         <Calculate saveCoin={saveCoin} saveCrypto={saveCryto} />
         <Quote result={result} />
       </div>
       <div className="table-cryptos">
         <TableCurrencies />
       </div>
-      <Footer/>
     </div>
   );
 }

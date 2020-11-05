@@ -32,22 +32,22 @@ export default function Navbar() {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link className="nav-links" to="/">
-              Home
+              Inicio
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-links" to="/market">
-              Market
+              Mercado
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-links" to="/exchanges">
+              Exchanges
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-links" to="/how-it-work">
-              How it works
-            </Link>
-          </li>
-          <li className="nav-link">
-            <Link to="/signup" className="btn-link">
-              Sign Up
+              Cómo funciona
             </Link>
           </li>
           <li className="nav-btn">

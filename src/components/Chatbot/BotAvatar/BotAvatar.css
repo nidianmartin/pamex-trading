@@ -1,0 +1,13 @@
+.avatar-bot {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    background-color:rgb(0, 184, 204);
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+}

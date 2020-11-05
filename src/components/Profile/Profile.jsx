@@ -1,19 +1,24 @@
 import React from "react";
 import { Layout, Menu, Space } from "antd";
 import {
-  UploadOutlined,
+  WalletOutlined,
   UserOutlined,
-  VideoCameraOutlined,
+  PieChartOutlined,
 } from "@ant-design/icons";
 import "./profile.css";
-import { Link } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import { SiTreehouse } from "react-icons/si";
 import { useAuthContext } from "../../contexts/AuthContext";
 import { logout } from "../../services/api-services";
+import Information from "./Information/Information";
+import Dashboard from "./Dashboard/Dashboard";
+import Wallet from "./Wallet/Wallet";
+
 
 const { Header, Content, Footer, Sider } = Layout;
 
 export default function Profile() {
+
   const authContext = useAuthContext();
 
   const handleLogout = async () => {
@@ -38,24 +43,26 @@ export default function Profile() {
           console.log(collapsed, type);
         }}
       >
-        <div>
+        <div style={{ margin: 10 }}>
           <Link to="/" className="navbar-logo">
             <SiTreehouse className="navbar-icon" />
             PAMEX
           </Link>
         </div>
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={[""]}>
+        <Menu
+          theme="dark"
+          mode="inline"
+          defaultSelectedKeys={[""]}
+          style={{ marginTop: 30 }}
+        >
           <Menu.Item key="1" icon={<UserOutlined />}>
-            nav 1
+            <Link to="/profile/information">Datos básicos</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-            nav 2
+          <Menu.Item key="2" icon={<PieChartOutlined />}>
+            <Link to="/profile/dashboard">Dashboard</Link>
           </Menu.Item>
-          <Menu.Item key="3" icon={<UploadOutlined />}>
-            nav 3
-          </Menu.Item>
-          <Menu.Item key="4" icon={<UserOutlined />}>
-            nav 4
+          <Menu.Item key="3" icon={<WalletOutlined />}>
+            <Link to="/profile/wallet">Wallet</Link>
           </Menu.Item>
         </Menu>
       </Sider>
@@ -64,9 +71,12 @@ export default function Profile() {
           className="site-layout-sub-header-background"
           style={{ padding: 0 }}
         >
-          <div className="space-align-block" style={{marginLeft:750 }}>
+          <div
+            className="space-align-block"
+            style={{ position: "absolute", left: "78%" }}
+          >
             <Space align="center">
-            <span className="mock-block">{authContext.user.email}</span>
+              <span className="mock-block">{authContext.user.email}</span>
               <button
                 onClick={handleLogout}
                 type="button"
@@ -82,12 +92,22 @@ export default function Profile() {
             className="site-layout-background"
             style={{ padding: 24, minHeight: 360 }}
           >
-            content
+            <Switch>
+              <Route
+                exact
+                path="/profile/information"
+                component={Information}
+              ></Route>
+              <Route
+                exact
+                path="/profile/dashboard"
+                component={Dashboard}
+              ></Route>
+              <Route exact path="/profile/wallet" component={Wallet}></Route>
+            </Switch>
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
-          Ant Design ©2018 Created by Ant UED
-        </Footer>
+        <Footer style={{ textAlign: "center" }}>Pamex Trading ©2020</Footer>
       </Layout>
     </Layout>
   );

@@ -11,19 +11,26 @@ import HowItWork from "./components/Home/HowItWork/HowItWork";
 import SignUp from "./components/Access/SignUp";
 import Login from "./components/Access/Login";
 import Profile from "./components/Profile/Profile.jsx";
+import ChatBot from "./components/ChatBot/ChatBot.jsx";
+import Exchange from "./components/Home/Exchange/Exchange";
+import Footer from "./components/Home/Footer";
 
 function App() {
+  
   return (
     <div className="App">
       <Navbar />
+          <ChatBot/>
         <Switch>
           <NotAuthenticatedRoute exact path='/' component={Home} />
           <NotAuthenticatedRoute exact path='/login' component={Login} />
           <NotAuthenticatedRoute exact path='/signup' component={SignUp} />
           <NotAuthenticatedRoute exact path='/market' component={TableCurrencies} />
+          <NotAuthenticatedRoute exact path='/exchanges' component={Exchange} />
           <NotAuthenticatedRoute exact path='/how-it-work' component={HowItWork} />
-          <AuthenticatedRoute exact path='/profile' component={Profile} />
+          <AuthenticatedRoute path='/profile' component={Profile} />
         </Switch>
+        <Footer/>
     </div>
   );
 }

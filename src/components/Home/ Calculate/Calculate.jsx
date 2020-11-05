@@ -19,10 +19,10 @@ export default function Calculate({ saveCoin, saveCrypto }) {
     { code: "MXN", name: "Peso Mexicano" },
     { code: "GBP", name: "Pound Sterling" },
   ];
-  const [currencie, SelectCurrencie] = useCurrencie("Choose your currency", "", coins);
+  const [currencie, SelectCurrencie] = useCurrencie("Moneda local", "", coins);
 
   // Use crypto
-  const [crypto, SelectCrypto] = useCrypto("Select your cryptocurrency", "", listCrypto);
+  const [crypto, SelectCrypto] = useCrypto("Criptmoneda", "", listCrypto);
 
   //Service
   useEffect(() => {
@@ -50,11 +50,11 @@ export default function Calculate({ saveCoin, saveCrypto }) {
         </Col>
         <Col span={12}>
           <form onSubmit={quoteCurrency}>
-            {error ? <Error message="Select currencies"/> : null}
+            {error ? <Error message="Seleccione sus monedas"/> : null}
             <SelectCurrencie />
             <SelectCrypto />
             <button className="btn-calculate" type="submit" >
-              Calculate
+              Calcular
             </button>
           </form>
         </Col>

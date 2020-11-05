@@ -12,16 +12,16 @@ export default function Quote({ result }) {
         message={
           <TextLoop mask>
             <p style={{fontSize:16}}>
-              Price: <span>{result.PRICE}</span>
+              Precio: <span>{result.PRICE}</span>
             </p>
             <p style={{fontSize:16}}>
-              Highest price of the day: <span>{result.HIGHDAY}</span>
+              Precio mas alto del día: <span>{result.HIGHDAY}</span>
             </p>
             <p style={{fontSize:16}}>
-              Lowest price of the day: <span>{result.LOWDAY}</span>
+              Precio mas bajo del día: <span>{result.LOWDAY}</span>
             </p>
             <p style={{fontSize:16}}>
-              Variation last 24 hours: <span>{result.CHANGEPCT24HOUR}</span>
+              Variación en las ultimas 24hrs: <span>{result.CHANGEPCT24HOUR}%</span>
             </p>
           </TextLoop>
         }

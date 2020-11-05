@@ -15,7 +15,7 @@ export default function SignUp() {
   };
 
   const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
+    setError(errorInfo)
   };
 
   return (

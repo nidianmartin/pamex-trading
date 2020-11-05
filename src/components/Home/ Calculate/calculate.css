@@ -35,7 +35,8 @@
 }
 
 .quote {
-  margin-left: 570px;
+  position: absolute;
+  right: 23%;
   width: 400px;
   border: #498eee solid;
   border-radius: 5px;

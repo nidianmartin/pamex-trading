@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Table, Tag, Input } from "antd";
 import { listAllCrypto } from "../../../services/api-services";
+import { StockOutlined } from '@ant-design/icons'
 const { Search } = Input;
 
 function TableCurrencies() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
+  let loading = true
 
   useEffect(() => {
     listAllCrypto().then((resp) => {
@@ -23,13 +25,14 @@ function TableCurrencies() {
 
   const data = [];
   filteredCoins.forEach((coin) => {
+    loading = false;
     data.push({
       key: coin.id,
       name: coin.name,
       price: coin.current_price,
       image: coin.image,
       symbol: coin.symbol,
-      volume: coin.market_cap,
+      supply: coin.circulating_supply,
       priceChange: coin.price_change_percentage_24h,
       marketcap: coin.market_cap,
     });
@@ -42,26 +45,29 @@ function TableCurrencies() {
       render: (img) => <img src={img} alt="crypto" style={{ width: 30}} />,
     },
     {
-      title: "Name",
+      title: "Nombre",
       dataIndex: "name",
     },
     {
-      title: "Price",
+      title: "Precio",
       dataIndex: "price",
-      render: (price) => (new Intl.NumberFormat().format(price))
+      render: (price) =>{ 
+       const number = (new Intl.NumberFormat().format(price))
+       return number+' €'
+      }
     },
     {
-      title: "Symbol",
+      title: "Simbolo",
       dataIndex: "symbol",
       render: (symbol) => (symbol.toUpperCase())
     },
     {
-      title: "Volume",
-      dataIndex: "volume",
-      render: (volume) => (new Intl.NumberFormat().format(volume))
+      title: "Supply",
+      dataIndex: "supply",
+      render: (supply) => (new Intl.NumberFormat().format(supply))
     },
     {
-      title: "Price Change",
+      title: "Cambio de precio",
       dataIndex: "priceChange",
       key: "priceChange",
       render: (priceChange) => {
@@ -69,13 +75,13 @@ function TableCurrencies() {
         priceChange < 0 ? color = 'red' : color = 'green'
         return (
         <Tag color={color} key={priceChange}>
-          {priceChange.toFixed(2)}{" "}
+          {priceChange.toFixed(2)}{'% '}<StockOutlined style={{fontSize:20}}/>
         </Tag>
         )
       }
     },
     {
-      title: "Market Cap",
+      title: "Capitalización del mercado",
       dataIndex: "marketcap",
       render: (marketcap) => (new Intl.NumberFormat().format(marketcap))
     },
@@ -84,15 +90,15 @@ function TableCurrencies() {
   return (
     <div className="table-coins">
       <div className="coin-search">
-        <h1 style={{marginBottom:30}}> CRYPTOCURRENCIY MARKET </h1>
+        <h1 style={{marginBottom:30}}> CRIPTOMONEDAS </h1>
         <Search
-          placeholder="Search..."
+          placeholder="Buscar..."
           allowClear
           onChange={handleChange}
           style={{ width: "50%", margin: "0 20px 30px 250px" }}
         />
       </div>
-      <Table columns={columns} dataSource={data} />
+      <Table loading={loading} columns={columns} dataSource={data} />
     </div>
   );
 }

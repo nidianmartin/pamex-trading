@@ -1,0 +1,254 @@
+.bg {
+    background-color: white;
+}
+.dashboard-user-content {
+  width: calc(100% - 162px);
+  float: right;
+  padding: 52px 0 30px 62px;
+}
+.bg-box {
+  background: #fff;
+  border: 1px solid #dee0e7;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.wallet-balance .title {
+  text-transform: uppercase;
+  padding: 20px 30px;
+}
+.wallet-balance .balance-sheet-wrapper ul li {
+  border-top: 1px solid #dee0e7;
+}
+.wallet-balance .balance-sheet-wrapper ul li:last-child {
+  border-bottom: 1px solid #dee0e7;
+}
+.wallet-balance .balance-sheet-wrapper ul li a {
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 17px 30px 11px 30px;
+}
+.wallet-balance .balance-sheet-wrapper ul li .name {
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.33em;
+  color: #101530;
+}
+.wallet-balance .balance-sheet-wrapper ul li .name img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.wallet-balance .balance-sheet-wrapper ul li .balance-inquery {
+  float: right;
+  text-align: right;
+}
+.wallet-balance .balance-sheet-wrapper ul li .balance-inquery .currency-title {
+  color: #101530;
+  font-size: 1.33em;
+  text-transform: uppercase;
+  display: block;
+  margin: -7px 0 -2px 0;
+}
+.wallet-balance .balance-sheet-wrapper ul li .balance-inquery .total-currency {
+  font-size: 1.33em;
+  color: #8890a3;
+}
+.wallet-balance .balance-sheet-wrapper .total-balance {
+  padding: 20px 30px;
+  font-size: 1.33em;
+  color: #66a6ff;
+  border-bottom: 1px solid #dee0e7;
+}
+.wallet-balance .balance-sheet-wrapper .total-balance .balance-title {
+  float: left;
+}
+.wallet-balance .balance-sheet-wrapper .total-balance .balance-figure {
+  float: right;
+}
+.wallet-balance .button-group {
+  padding: 24px 20px;
+}
+.wallet-balance .button-group li:first-child {
+  float: left;
+}
+.wallet-balance .button-group li:last-child {
+  float: right;
+}
+.wallet-balance .button-group li button {
+  width: 160px;
+  height: 45px;
+}
+.wallet-balance .button-group li .deposit-button {
+  color: #fff;
+  font-size: 1.333333em;
+  border-radius: 25px;
+  background: #4a9aef;
+}
+.cryptocurrency-prices {
+  padding: 22px 28px 25px;
+}
+.cryptocurrency-prices .title {
+  text-transform: uppercase;
+  float: left;
+}
+.tooltip-holder {
+  display: inline-block;
+  position: relative;
+}
+.tooltip-holder .help-button {
+  position: absolute;
+  background: transparent;
+  width: 15px;
+  height: 15px;
+  right: -23px;
+  top: 1px;
+}
+.cryptocurrency-prices .live-status {
+  position: relative;
+  color: #3b6cfe;
+  text-transform: uppercase;
+  padding-left: 15px;
+  float: right;
+}
+.cryptocurrency-prices .live-status:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background: linear-gradient(120deg, #68e4f1 0%, #66a6ff 100%);
+}
+.cryptocurrency-prices .currnecy-prices-list .left-content {
+  float: left;
+}
+.cryptocurrency-prices .currnecy-prices-list .right-content {
+  float: right;
+  width: 40%;
+  max-width: 135px;
+}
+
+.cryptocurrency-prices .currnecy-prices-list .left-content img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 11px;
+}
+.cryptocurrency-prices .currnecy-prices-list .left-content .name {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cryptocurrency-prices .currnecy-prices-list .text {
+  text-transform: uppercase;
+}
+.cryptocurrency-prices .currnecy-prices-list .value {
+  color: #101530;
+  font-size: 1.33333em;
+  display: block;
+}
+.cryptocurrency-prices .currnecy-prices-list .value .current-rate {
+  font-size: 0.75em;
+  float: right;
+  margin-top: 5px;
+}
+.cryptocurrency-prices .currnecy-prices-list .value .current-rate.down {
+  color: #f14c5d;
+}
+.cryptocurrency-prices .currnecy-prices-list .value .current-rate.up {
+  color: #4a9aef;
+}
+
+.cryptocurrency-prices .currnecy-prices-list .value .current-rate img {
+  display: inline-block;
+  vertical-align: 0px;
+}
+.cryptocurrency-prices .currnecy-prices-list li {
+  padding: 43px 0 22px 0;
+}
+.cryptocurrency-prices .currnecy-prices-list li:last-child {
+  padding-bottom: 8px;
+}
+.wallet-history {
+  margin: 0 -12px;
+}
+.wallet-history li {
+  float: left;
+  padding: 0 12px;
+  width: 33.3333333%;
+  margin-bottom: 25px;
+}
+.wallet-history .inner-warpper {
+  background: #fff;
+  border: 1px solid #dee0e7;
+  height: 115px;
+  border-radius: 5px;
+  padding: 29px 10px 10px 12px;
+}
+.wallet-history .inner-warpper .inner-title {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #8890a3;
+}
+.wallet-history .inner-warpper .figure {
+  font-size: 2.5em;
+  color: #101530;
+  padding-top: 7px;
+  font-weight: normal;
+}
+.transactions-history {
+  padding: 20px 0 0 0;
+  border-bottom: none;
+}
+.transactions-history table {
+  margin: 0;
+}
+.transactions-history .title {
+  padding-left: 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.transactions-history .transactions-list {
+  border-top: 1px solid #dee0e7;
+}
+.transactions-history .transactions-list .single-list td {
+  border-top: none;
+  border-bottom: 1px solid #dee0e7;
+  padding: 10px 12px;
+}
+.transactions-history .transactions-list .single-list td:last-child {
+  text-align: right;
+}
+.transactions-history .transactions-list .single-list .time {
+  color: #101530;
+  text-align: center;
+}
+.transactions-history .transactions-list .single-list .month {
+  text-transform: uppercase;
+}
+.transactions-history .transactions-list .single-list .date {
+  font-size: 1.3333em;
+}
+.transactions-history .transactions-list .single-list .heading {
+  color: #101530;
+  font-size: 1.3333em;
+}
+.transactions-history .transactions-list .single-list .cancel-transactions {
+  width: 75px;
+  height: 36px;
+  border: 1px solid #edeef1;
+  border-radius: 5px;
+  color: #101530;
+  background: transparent;
+}
+.transactions-history .transactions-list .single-list .amount {
+  font-size: 2.5em;
+  color: #101530;
+}
+.transactions-history .transactions-list .single-list td {
+  vertical-align: middle;
+}
+.transactions-history.completed-transactions-history {
+  min-height: 524px;
+}

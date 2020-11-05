@@ -1,0 +1,7 @@
+.chatbot-content {
+  position: fixed;
+  z-index: 9;
+  width: 300px;
+  right: 0px;
+  bottom: 54px;
+}

@@ -40,13 +40,13 @@ export default function Footer() {
             <div className="col-lg-4 col-12">
               <ul className="clearfix">
                 <li>
-                  <Link to="/">Affiliates</Link>
+                  <Link to="/signup">Crear Cuenta</Link>
                 </li>
                 <li>
-                  <Link to="/">Privacy Policy</Link>
+                  <Link to="/">Politica de Privacidad</Link>
                 </li>
                 <li>
-                  <Link to="/">Terms of Use</Link>
+                  <Link to="/">Terminos de Uso</Link>
                 </li>
               </ul>
             </div>

@@ -11,7 +11,7 @@ const useCurrencie = (label, stateInitial, coins) => {
         onChange={(e) => actualizarState(e.target.value)}
         value={state}
       >
-        <option value="">- Select -</option>
+        <option value="">- Seleccionar -</option>
         {coins.map((coin) => (
           <option key={coin.code} value={coin.code}>
             {coin.name}
