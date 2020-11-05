@@ -8,7 +8,7 @@ import UserAvatar from './UserAvatar/UserAvatar.jsx'
 const config = {
   initialMessages: [
     createChatBotMessage(
-      `Hola soy Mets, sere tu guía en este mundo de criptomedas. ¿En que te puedo ayudar?`,
+      `Hola soy Mets, Bienvenidos a la presentación de Nidian. Sere tu guía en este mundo de criptomedas. ¿En que te puedo ayudar?`,
       {
         widget: "learningOptions",
       }
@@ -49,10 +49,33 @@ const config = {
               "https://www.consumidor.ftc.gov/articulos/lo-que-hay-que-saber-sobre-las-criptomonedas",
             id: 2,
           },
+        ],
+      },
+    },
+    {
+      widgetName: "blockLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
           {
-            text: "Lista de Criptomonedas",
-            url: "/market",
-            id: 3,
+            text: "Blockchain es...",
+            url:
+              "https://www.xataka.com/especiales/que-es-blockchain-la-explicacion-definitiva-para-la-tecnologia-mas-de-moda",
+            id: 1,
+          },
+        ],
+      },
+    },
+    {
+      widgetName: "saleCurrencies",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Exchanges",
+            url:
+              "/exchanges",
+            id: 1,
           },
         ],
       },

@@ -9,10 +9,16 @@ const LearningOptions = (props) => {
         handler: props.actionProvider.handleCryptoList,
         id: 1,
     },
-    { text: "Blockchain", handler: () => {}, id: 2 },
-    { text: "Defi", handler: () => {}, id: 3 },
-    { text: "Trading", handler: () => {}, id: 4 },
-    { text: "Markets", handler: () => {}, id: 5 },
+    { 
+      text: "Blockchain", 
+      handler: props.actionProvider.handleBlockchain, 
+      id: 2 
+    },
+    { 
+      text: "Exchange", 
+      handler: props.actionProvider.handleSaleCurrencies, 
+      id: 3 
+    },
   ];
 
   const optionsMarkup = options.map((option) => (
