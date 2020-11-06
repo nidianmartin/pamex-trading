@@ -10,8 +10,8 @@ import TableCurrencies from "./components/Home/TableCurrencies/TableCurrencies";
 import HowItWork from "./components/Home/HowItWork/HowItWork";
 import SignUp from "./components/Access/SignUp";
 import Login from "./components/Access/Login";
-import Profile from "./components/Profile/Profile.jsx";
-import ChatBot from "./components/ChatBot/ChatBot.jsx";
+import Profile from "./components/Profile/Profile";
+import ChatBot from "./components/ChatBot/ChatBot";
 import Exchange from "./components/Home/Exchange/Exchange";
 import Footer from "./components/Home/Footer";
 

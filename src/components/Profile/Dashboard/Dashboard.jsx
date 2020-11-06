@@ -29,7 +29,6 @@ export default function Dashboard() {
           id="galaxy-score"
           frameBorder="0"
           border="0"
-          cellspacing="0"
           scrolling="no"
           style={{ width: "100%", height: 300 }}
         ></iframe>
@@ -40,7 +39,6 @@ export default function Dashboard() {
           id="altRank"
           frameBorder="0"
           border="0"
-          cellspacing="0"
           scrolling="no"
           style={{ width: "100%", height: 300 }}
         ></iframe>
@@ -51,7 +49,6 @@ export default function Dashboard() {
           id="candlestick"
           frameBorder="0"
           border="0"
-          cellspacing="0"
           scrolling="no"
           style={{ width: "100%", height: "450px" }}
         ></iframe>

@@ -9,7 +9,6 @@ export default function Influencers() {
         id="candlestick"
         frameBorder="0"
         border="0"
-        cellspacing="0"
         scrolling="no"
         style={{ width: "100%", height: "654px" }}
       ></iframe>

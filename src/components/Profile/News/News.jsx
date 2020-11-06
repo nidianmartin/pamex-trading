@@ -25,7 +25,6 @@ export default function News() {
         id="news-articles"
         frameBorder="0"
         border="0"
-        cellspacing="0"
         scrolling="yes"
         style={{ width: "100%", height: "700px" }}
       ></iframe>
