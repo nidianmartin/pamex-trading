@@ -11,7 +11,7 @@ import HowItWork from "./components/Home/HowItWork/HowItWork";
 import SignUp from "./components/Access/SignUp";
 import Login from "./components/Access/Login";
 import Profile from "./components/Profile/Profile";
-import ChatBot from "./components/ChatBot/ChatBot";
+//import ChatBot from "./components/ChatBot/ChatBot";
 import Exchange from "./components/Home/Exchange/Exchange";
 import Footer from "./components/Home/Footer";
 
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-          <ChatBot/>
+          {/* <ChatBot/> */}
         <Switch>
           <NotAuthenticatedRoute exact path='/' component={Home} />
           <NotAuthenticatedRoute exact path='/login' component={Login} />
