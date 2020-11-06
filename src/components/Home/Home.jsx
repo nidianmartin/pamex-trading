@@ -6,6 +6,7 @@ import Calculate from "./ Calculate/Calculate";
 import TableCurrencies from "./TableCurrencies/TableCurrencies";
 import Axios from "axios";
 import Quote from "./ Calculate/Quote";
+import { Row, Col } from "antd";
 
 export default function Home() {
   const [coin, saveCoin] = useState("");
@@ -43,8 +44,8 @@ export default function Home() {
                 data-wow-duration="1.2s"
                 data-wow-delay="0.5s"
               >
-                Todo lo que necesitas saber de criptomonedas y mercados. Centraliza
-                toda tu información en una sola web. <br/>
+                Todo lo que necesitas saber de criptomonedas y mercados.
+                Centraliza toda tu información en una sola web. <br />
                 ¿Ya tienes cuenta?
               </p>
               <ul
@@ -63,9 +64,15 @@ export default function Home() {
         </div>
       </div>
       <div className="investment-calculation">
-        <h1>CALCULADORA DE CRIPTOMONEDAS</h1>
-        <Calculate saveCoin={saveCoin} saveCrypto={saveCryto} />
-        <Quote result={result} />
+        <Row>
+          <Col span={24}>
+            <h1>CALCULADORA DE CRIPTOMONEDAS</h1>
+            <Calculate saveCoin={saveCoin} saveCrypto={saveCryto} />
+          </Col>
+          <Col span={24}>
+            <Quote result={result} />
+          </Col>
+        </Row>
       </div>
       <div className="table-cryptos">
         <TableCurrencies />

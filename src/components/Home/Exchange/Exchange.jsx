@@ -59,7 +59,7 @@ function Exchange() {
     {
       title: "Web",
       dataIndex: "web",
-      render: (url) => <a>{url}</a>
+      render: (url) => <span>{url}</span>
     },
     {
       title: "Trading Bitcoin 24hrs",

@@ -38,8 +38,8 @@ export default function Calculate({ saveCoin, saveCrypto }) {
       return;
     }
     saveError(false);
-    saveCrypto(crypto)
-    saveCoin(currencie)
+    saveCrypto(crypto);
+    saveCoin(currencie);
   };
 
   return (
@@ -50,10 +50,10 @@ export default function Calculate({ saveCoin, saveCrypto }) {
         </Col>
         <Col span={12}>
           <form onSubmit={quoteCurrency}>
-            {error ? <Error message="Seleccione sus monedas"/> : null}
+            {error ? <Error message="Seleccione sus monedas" /> : null}
             <SelectCurrencie />
             <SelectCrypto />
-            <button className="btn-calculate" type="submit" >
+            <button className="btn-calculate" type="submit">
               Calcular
             </button>
           </form>

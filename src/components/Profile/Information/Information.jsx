@@ -73,6 +73,7 @@ export default function Information() {
               id="edit-profile"
               role="tabpanel"
             >
+              {updateError ? <p>{error}</p> : null}
               <form onSubmit={handleSubmit} className="left-space-fix">
                 <div className="single-input-group large-box">
                   <div className="member-status clearfix">
