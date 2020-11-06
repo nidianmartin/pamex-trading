@@ -15,13 +15,13 @@ import Login from "./components/Access/Login";
 import Profile from "./components/Profile/Profile";
 import Exchange from "./components/Home/Exchange/Exchange";
 import Footer from "./components/Home/Footer";
-import ChatBot from "./components/ChatBot/ChatBot";
+import Chat from "./components/ChatBot/Chat";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <ChatBot />
+      <Chat/>
       <Switch>
         <NotAuthenticatedRoute exact path="/" component={Home} />
         <NotAuthenticatedRoute exact path="/login" component={Login} />
