@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Chatbot from "react-chatbot-kit";
-import ActionProvider from "./ActionProvider";
-import MessageParser from "./MessageParser";
-import config from "./Config";
+import ActionProvider from "../ChatBot/ActionProvider";
+import MessageParser from "../ChatBot/MessageParser";
+import config from "../ChatBot/Config";
 import { VscHubot } from 'react-icons/vsc'
 import './chatbot.css'
 

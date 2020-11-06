@@ -15,7 +15,7 @@ import Login from "./components/Access/Login";
 import Profile from "./components/Profile/Profile";
 import Exchange from "./components/Home/Exchange/Exchange";
 import Footer from "./components/Home/Footer";
-import Chat from "./components/ChatBot/Chat";
+import Chat from "./components/Chat/Chat";
 
 function App() {
   return (
