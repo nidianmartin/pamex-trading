@@ -1,9 +1,9 @@
 import React from "react";
 import { createChatBotMessage } from "react-chatbot-kit";
-import LearningOptions from "./LearningOptions/LearningOptions.jsx";
-import LinkList from "./LinkList/LinkList.jsx";
-import BotAvatar from './BotAvatar/BotAvatar.jsx'
-import UserAvatar from './UserAvatar/UserAvatar.jsx'
+import LearningOptions from "../LearningOptions/LearningOptions.jsx";
+import LinkList from "../LinkList/LinkList.jsx";
+import BotAvatar from '../BotAvatar/BotAvatar.jsx'
+import UserAvatar from '../UserAvatar/UserAvatar.jsx'
 
 const config = {
   initialMessages: [
