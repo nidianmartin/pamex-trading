@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = 'https://pamex-api.herokuapp.com/'
+axios.defaults.baseURL = `${process.env.REACT_APP_API_URL}` || 'http://localhost:3001';
 axios.defaults.withCredentials = true;
 
 export const login = ({email, password}) => {
